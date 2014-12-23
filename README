@@ -1,0 +1,6 @@
+artDirWatcher is a small utility to monitor a directory for incoming files, and route them to an output directory in a sequential order.
+This is useful for automation of Illustrator or Photoshop exports using actions. You can create an action to export to an input directory, and artDirWatcher will move that file to the output directory and rename it, so that you can keep using the generic action.
+
+Currently the tool assumes your input directory contains 2 sub directories: "full", and "thumb". The content of these 2 sub dirs will be routed to the correspoding sub dirs in the output directory.
+
+I use it to generate resource images of 2 sizes, but a savvy user can easily edit the tool and add or remove sub dirs for observation.
